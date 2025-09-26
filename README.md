@@ -25,6 +25,16 @@ This project implements a micro-hierarchical CNN architecture that addresses cri
 - **8× Test-Time Augmentation**: Comprehensive ensemble with rotations, flips, and transformations
 - **Differential Learning Rates**: Backbone (0.0005), attention (0.003), classifier (0.003)
 
+## File Structure
+
+```
+micro-hierarchical-dfu-classifier/
+├── patches1.py                           # Main implementation
+├── confusion_matrix.png                  # Results visualization
+├── README.md                            # Documentation
+└── LICENSE                              # Apache 2.0 License
+```
+
 ## Dataset
 
 **Source**: [DFU Wagner's Classification Dataset](https://www.kaggle.com/datasets/purushomohan/dfu-wagners-classification)
@@ -36,23 +46,6 @@ This project implements a micro-hierarchical CNN architecture that addresses cri
 - Grade 2: 171 images
 - Grade 3: 82 images
 - False cases: 414 images (Burns, Bruises, Cuts, Abrasions)
-
-```
-patches/
-├── Training/
-│   ├── Grade 0/
-│   ├── Grade 1/ 
-│   ├── Grade 2/
-│   ├── Grade 3/
-│   └── Normal(Healthy skin)/
-├── Validation/
-│   └── [same structure]
-└── False-case/
-    ├── Abrasions/
-    ├── Bruises/
-    ├── Burns/
-    └── Cut/
-```
 
 ## Model Architecture
 
@@ -182,7 +175,6 @@ pip install pillow>=8.0.0 numpy>=1.20.0
 - **Resource Efficient**: Runs on mobile devices and embedded systems
 - **Battery Friendly**: Minimal computational overhead
 
-
 ## Requirements
 
 ```txt
@@ -215,16 +207,15 @@ numpy>=1.20.0
 - `predict_hierarchical()`: Two-stage clinical assessment pipeline
 - `test_single_image_ultra()`: Single image diagnostic testing
 
-
 ## License
 
 This project is licensed under the Apache 2.0 License. See [LICENSE](LICENSE) for details.
 
 ## Acknowledgments
 
-- Medical professionals providing clinical validation
 - [DFU Wagner's Classification Dataset](https://www.kaggle.com/datasets/purushomohan/dfu-wagners-classification) contributors
 - Research institutions enabling healthcare AI development
+
 ---
 
 **Medical Disclaimer**: This system is designed for research and educational purposes. Clinical decisions should always involve qualified healthcare professionals. The system provides diagnostic support but does not replace professional medical judgment.
