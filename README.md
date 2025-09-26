@@ -182,18 +182,6 @@ pip install pillow>=8.0.0 numpy>=1.20.0
 - **Resource Efficient**: Runs on mobile devices and embedded systems
 - **Battery Friendly**: Minimal computational overhead
 
-## File Structure
-
-```
-project/
-├── patches1.py                           # Main implementation
-├── ultra_micro_binary_model.pth         # Binary model weights  
-├── ultra_micro_multiclass_model.pth     # Multiclass model weights
-├── ultra_micro_confusion_matrix.png     # Results visualization
-├── ultra_micro_training_results.png     # Training curves
-├── requirements.txt                      # Dependencies
-└── README.md                            # Documentation
-```
 
 ## Requirements
 
